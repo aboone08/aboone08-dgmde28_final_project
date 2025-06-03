@@ -1,0 +1,127 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #007acc;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #007acc;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #003d66;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #aac9c7;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-family: "Style Script", cursive;
+  line-height: 1.1;
+  color: #107b89;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #107b89;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #acc6ac;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: #007acc;
+  border-color: #007acc;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 5px;
+  background-color: #acc6ac;
+}
+
+select {
+  margin: 10px 5px;
+  padding: 5px;
+  background-color: #de7744;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.prompt-card {
+  background: whitesmoke;
+  color: #107b89;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  background: whitesmoke;;
+}
+
+input[type="text"] {
+  color: #107b89;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #007acc;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
